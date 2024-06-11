@@ -12,8 +12,8 @@ import { provideIonicAngular } from '@ionic/angular/standalone';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    //provideZoneChangeDetection({ eventCoalescing: true }),
-    provideExperimentalZonelessChangeDetection(),
+    provideZoneChangeDetection({ eventCoalescing: true }),
+    //provideExperimentalZonelessChangeDetection(),
     provideRouter(routes),
     provideHttpClient(withFetch()),
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
