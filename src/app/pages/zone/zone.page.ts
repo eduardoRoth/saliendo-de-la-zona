@@ -88,7 +88,7 @@ import 'zone.js';
         </ion-list>
       </ion-card>
 
-      <ion-card>
+      <!--<ion-card>
         <ion-card-header>
           <ion-card-title> Async Pipe </ion-card-title>
         </ion-card-header>
@@ -104,7 +104,7 @@ import 'zone.js';
             </ion-item>
           }
         </ion-list>
-      </ion-card>
+      </ion-card>-->
     </ion-content>
   `,
   styles: ``,
@@ -126,6 +126,7 @@ export class ZonePage implements OnInit {
   ngOnInit() {
     setInterval(() => {
       this.counter++;
+      console.log(this.counter);
     }, 1000);
 
     this.http
