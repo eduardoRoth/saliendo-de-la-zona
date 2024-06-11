@@ -2,9 +2,19 @@ import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {
-  IonAvatar, IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle,
+  IonAvatar,
+  IonBackButton,
+  IonButton,
+  IonButtons,
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardTitle,
   IonContent,
-  IonHeader, IonItem, IonLabel, IonList,
+  IonHeader,
+  IonItem,
+  IonLabel,
+  IonList,
   IonTitle,
   IonToolbar,
 } from '@ionic/angular/standalone';
@@ -114,6 +124,7 @@ export class ZonelessPage implements OnInit {
   ngOnInit() {
     setInterval(() => {
       this.counter++;
+      console.log(this.counter);
     }, 1000);
 
     this.http
