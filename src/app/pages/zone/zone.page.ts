@@ -21,7 +21,6 @@ import {
 import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
 import { Character, CharacterResponse } from '../../models/rickandmorty.models';
-import 'zone.js';
 
 @Component({
   selector: 'app-zone',
